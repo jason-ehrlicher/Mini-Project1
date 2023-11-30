@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forecast Golf</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,6 +63,9 @@
           <li class="sidebar-list-item">
             <span class="material-icons-outlined"> psychology </span>ForeCast
           </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined"> settings </span>Settings
+          </li>
         </ul>
       </aside>
       <!-- Main -->
@@ -109,8 +113,23 @@
             <span class="text-primary font-weight-bold percent-change">&#8593; 17%</span>
           </div>
         </div>
+        <div class="charts">
+            <div class="charts-card">
+                <p class="chart-title">Average Rounds Per Day</p>
+                <div id="bar-chart"></div>
+            </div>
+
+            <div class="charts-card">
+                <p class="chart-title">Rounds Per Month</p>
+                <div id="area-chart"></div>
+            </div>
+        </div>
       </main>
     </div>
+    <!-- Scripts -->
+        <!-- Apex Charts -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
+
   </body>
 </html>
