@@ -80,46 +80,64 @@ var barChart = new ApexCharts(
 );
 barChart.render();
 
-
 // Area Chart
 var options = {
-    series: [{
+  series: [
+    {
       name: "Rounds Per Month",
-      data: [2253, 2275, 3496, 3659, 3704, 2960, 3084, 2690, 3088, 3439, 2158, 1935]
+      data: [
+        2253, 2275, 3496, 3659, 3704, 2960, 3084, 2690, 3088, 3439, 2158, 1935,
+      ],
     },
   ],
-    chart: {
+  chart: {
     height: 350,
-    type: 'line',
+    type: "line",
     toolbar: {
-        show: false
+      show: false,
     },
     zoom: {
-      enabled: false
+      enabled: false,
     },
   },
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
   stroke: {
     width: [5, 7, 5],
-    curve: 'straight',
-    dashArray: [0, 8, 5]
+    curve: "straight",
+    dashArray: [0, 8, 5],
   },
   legend: {
-    tooltipHoverFormatter: function(val, opts) {
-      return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
-    }
+    tooltipHoverFormatter: function (val, opts) {
+      return (
+        val +
+        " - " +
+        opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] +
+        ""
+      );
+    },
   },
   markers: {
     size: 0,
     hover: {
-      sizeOffset: 6
-    }
+      sizeOffset: 6,
+    },
   },
   xaxis: {
-    categories: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept',
-      'Oct', 'Nov', 'Dec'
+    categories: [
+      "Jan",
+      "Feb",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec",
     ],
   },
   tooltip: {
@@ -127,30 +145,30 @@ var options = {
       {
         title: {
           formatter: function (val) {
-            return val + " (mins)"
-          }
-        }
+            return val + " (mins)";
+          },
+        },
       },
       {
         title: {
           formatter: function (val) {
-            return val + " per session"
-          }
-        }
+            return val + " per session";
+          },
+        },
       },
       {
         title: {
           formatter: function (val) {
             return val;
-          }
-        }
-      }
-    ]
+          },
+        },
+      },
+    ],
   },
   grid: {
-    borderColor: '#f1f1f1',
-  }
-  };
+    borderColor: "#f1f1f1",
+  },
+};
 
-  var areaChart = new ApexCharts(document.querySelector("#area-chart"), options);
-  areaChart.render();
+var areaChart = new ApexCharts(document.querySelector("#area-chart"), options);
+areaChart.render();
