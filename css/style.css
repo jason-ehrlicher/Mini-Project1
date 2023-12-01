@@ -104,9 +104,14 @@ body {
 }
 
 .sidebar-brand {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 80%;
+  height: auto;
 }
 
 .sidebar-list {
