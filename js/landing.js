@@ -1,23 +1,3 @@
-// Sidebar Toggle
-
-let sidebarOpen = false;
-let sidebar = document.getElementById("sidebar");
-
-// Sidebar Open
-function openSidebar() {
-  if (!sidebarOpen) {
-    sidebar.classList.add("sidebar-responsive");
-    sidebarOpen = true;
-  }
-}
-
-// Sidebar Close
-function closeSidebar() {
-  if (sidebarOpen) {
-    sidebar.classList.remove("sidebar-responsive");
-    sidebarOpen = false;
-  }
-}
 
 // Modal
 
