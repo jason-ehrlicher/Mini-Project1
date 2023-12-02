@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Messages</title>
@@ -10,97 +11,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
+        rel="stylesheet" />
     <!-- Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="grid-container">
-      <!-- Header -->
-      <header class="header">
-        <div class="menu-icon" onclick="openSidebar()">
-          <span class="material-icons-outlined"> menu </span>
-        </div>
-        <div class="header-left">
-          <span class="material-icons-outlined"> search </span>
-        </div>
-        <div class="header-right">
-          <span class="material-icons-outlined">notifications</span>
-          <a href="messages.html">
-            <span class="material-icons-outlined"> email </span>
-          </a>
-          <a href="/account.html">
-            <span class="material-icons-outlined"> account_circle </span>
-          </a>
-        </div>
-      </header>
-      <!-- Sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-            <a href="dashboard.html">
-              <img
-                src="/assets/images/forecast golf logo1.png"
-                class="logo-image"
-                alt="forecast golf logo"
-              />
-            </a>
-          </div>
-          <span class="material-icons-outlined" onclick="closeSidebar()">
-            close
-          </span>
-        </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
 
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="/dashboard.html">
-              <span class="material-icons-outlined"> dashboard </span> Dashboard
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/reports.html">
-              <span class="material-icons-outlined"> poll </span>Reports
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/history.html">
-              <span class="material-icons-outlined"> history </span>History
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/upload.html">
-              <span class="material-icons-outlined"> file_upload </span>Upload
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/forecast.html">
-              <span class="material-icons-outlined"> psychology </span>ForeCast
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/settings.html">
-              <span class="material-icons-outlined"> settings </span>Settings
-            </a>
-          </li>
-        </ul>
-      </aside>
-      <!-- Main -->
-      <main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">Messages</p>
-        </div>
-        <div class="input-container">
-          <p class="chart-title">Messages</p>
-        </div>
-      </main>
+<body>
+    <div class="grid-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined"> menu </span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined"> search </span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <a href="messages.html">
+                    <span class="material-icons-outlined"> email </span>
+                </a>
+                <a href="/account.html">
+                    <span class="material-icons-outlined"> account_circle </span>
+                </a>
+            </div>
+        </header>
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <a href="dashboard.html">
+                        <img src="/assets/images/forecast golf logo1.png" class="logo-image" alt="forecast golf logo" />
+                    </a>
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">
+                    close
+                </span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="/dashboard.html">
+                        <span class="material-icons-outlined"> dashboard </span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/reports.html">
+                        <span class="material-icons-outlined"> poll </span>Reports
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/history.html">
+                        <span class="material-icons-outlined"> history </span>History
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/upload.html">
+                        <span class="material-icons-outlined"> file_upload </span>Upload
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/forecast.html">
+                        <span class="material-icons-outlined"> psychology </span>ForeCast
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="/settings.html">
+                        <span class="material-icons-outlined"> settings </span>Settings
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Main -->
+        <main class="main-container">
+            <div class="main-title">
+                <p class="font-weight-bold">Messages</p>
+            </div>
+            <div class="input-container">
+                <p class="chart-title">Messages</p>
+            </div>
+        </main>
     </div>
     <!-- Scripts -->
     <!-- JS Link -->
     <script src="/js/script.js"></script>
-  </body>
+</body>
+
 </html>

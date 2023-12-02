@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="grid-container">
-      <!-- Header -->
-      <header class="header">
-        <div class="menu-icon" onclick="openSidebar()">
-          <span class="material-icons-outlined"> menu </span>
-        </div>
-        <div class="header-left">
-          <span class="material-icons-outlined"> search </span>
-        </div>
-        <div class="header-right">
-          <span class="material-icons-outlined">notifications</span>
-          <a href="messages.html">
-            <span class="material-icons-outlined"> email </span>
-          </a>
-          <a href="/account.html">
-            <span class="material-icons-outlined"> account_circle </span>
-          </a>
-        </div>
-      </header>
-      <!-- Sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-            <a href="dashboard.html">  <img
-              src="/assets/images/forecast golf logo1.png"
-              class="logo-image"
-              alt="forecast golf logo"
-            />
-          </a>
-          </div>
-          <span class="material-icons-outlined" onclick="closeSidebar()">
-            close
-          </span>
-        </div>
 
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="/dashboard.html">
-              <span class="material-icons-outlined"> dashboard </span> Dashboard
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/reports.html">
-              <span class="material-icons-outlined"> poll </span>Reports
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/history.html">
-              <span class="material-icons-outlined"> history </span>History
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/upload.html">
-              <span class="material-icons-outlined"> file_upload </span>Upload
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/forecast.html">
-              <span class="material-icons-outlined"> psychology </span>ForeCast
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="/settings.html">
-              <span class="material-icons-outlined"> settings </span>Settings
-            </a>
-          </li>
-        </ul>
-      </aside>
-      <!-- Main -->
-      <main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">DAILY ROUNDS PLAYED DASHBOARD</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
+    rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined"> menu </span>
+      </div>
+      <div class="header-left">
+        <span class="material-icons-outlined"> search </span>
+      </div>
+      <div class="header-right">
+        <span class="material-icons-outlined">notifications</span>
+        <a href="messages.html">
+          <span class="material-icons-outlined"> email </span>
+        </a>
+        <a href="/account.html">
+          <span class="material-icons-outlined"> account_circle </span>
+        </a>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <a href="dashboard.html"> <img src="/assets/images/forecast golf logo1.png" class="logo-image"
+              alt="forecast golf logo" />
+          </a>
         </div>
-        <div class="input-container">
-          <p class="chart-title">Input Daily Rounds Played</p>
-          <form class="form-container">
+        <span class="material-icons-outlined" onclick="closeSidebar()">
+          close
+        </span>
+      </div>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="/dashboard.html">
+            <span class="material-icons-outlined"> dashboard </span> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="/reports.html">
+            <span class="material-icons-outlined"> poll </span>Reports
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="/history.html">
+            <span class="material-icons-outlined"> history </span>History
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="/upload.html">
+            <span class="material-icons-outlined"> file_upload </span>Upload
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="/forecast.html">
+            <span class="material-icons-outlined"> psychology </span>ForeCast
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="/settings.html">
+            <span class="material-icons-outlined"> settings </span>Settings
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <p class="font-weight-bold">DAILY ROUNDS PLAYED DASHBOARD</p>
+      </div>
+      <div class="input-container">
+        <p class="chart-title">Input Daily Rounds Played</p>
+        <form class="form-container">
           <div class="input-field">
             <label for="textInput" class="form-label">Rounds Played</label>
             <input type="text" id="textInput" class="form-input" />
@@ -107,69 +102,68 @@
           <div class="submit-button-container">
             <button type="submit" class="submit-button">Submit</button>
           </div>
-          </form>
+        </form>
+      </div>
+      <div class="main-cards">
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">Daily % Change</p>
+            <span class="material-icons-outlined text-green">
+              query_stats
+            </span>
+          </div>
+          <span class="text-primary font-weight-bold">&#8593; 9%</span>
         </div>
-        <div class="main-cards">
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">Daily % Change</p>
-              <span class="material-icons-outlined text-green">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold">&#8593; 9%</span>
-          </div>
 
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">Weekly % Change</p>
-              <span class="material-icons-outlined text-green">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold">&#8593; 3%</span>
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">Weekly % Change</p>
+            <span class="material-icons-outlined text-green">
+              query_stats
+            </span>
           </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">Monthly % Change</p>
-              <span class="material-icons-outlined text-red">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold">&#8595; 11%</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">YTD % Change</p>
-              <span class="material-icons-outlined text-green">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold percent-change"
-              >&#8593; 17%</span
-            >
-          </div>
+          <span class="text-primary font-weight-bold">&#8593; 3%</span>
         </div>
-        <div class="charts">
-          <div class="charts-card">
-            <p class="chart-title">Average Rounds Per Day</p>
-            <div id="bar-chart"></div>
-          </div>
 
-          <div class="charts-card">
-            <p class="chart-title">Rounds Per Month</p>
-            <div id="area-chart"></div>
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">Monthly % Change</p>
+            <span class="material-icons-outlined text-red">
+              query_stats
+            </span>
           </div>
+          <span class="text-primary font-weight-bold">&#8595; 11%</span>
         </div>
-      </main>
-    </div>
-    <!-- Scripts -->
-    <!-- Apex Charts -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- JS Link -->
-    <script src="/js/script.js"></script>
-    <script src="/js/charts.js"></script>
-  </body>
+
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">YTD % Change</p>
+            <span class="material-icons-outlined text-green">
+              query_stats
+            </span>
+          </div>
+          <span class="text-primary font-weight-bold percent-change">&#8593; 17%</span>
+        </div>
+      </div>
+      <div class="charts">
+        <div class="charts-card">
+          <p class="chart-title">Average Rounds Per Day</p>
+          <div id="bar-chart"></div>
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title">Rounds Per Month</p>
+          <div id="area-chart"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Scripts -->
+  <!-- Apex Charts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- JS Link -->
+  <script src="/js/script.js"></script>
+  <script src="/js/charts.js"></script>
+</body>
+
 </html>

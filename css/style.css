@@ -80,19 +80,18 @@ body {
   display: none;
 }
 
-.header-right span, 
+.header-right span,
 .header-right a {
   margin-left: 10px;
-  color: inherit; 
-  text-decoration: none; 
-  cursor: pointer; 
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.header-right span:hover, 
+.header-right span:hover,
 .header-right a:hover {
-  color: var(--med-green); 
+  color: var(--med-green);
 }
-
 
 /* Sidebar */
 #sidebar {
@@ -113,7 +112,7 @@ body {
   margin-bottom: 30px;
 }
 
-.sidebar-title > span {
+.sidebar-title>span {
   display: none;
 }
 
@@ -132,11 +131,10 @@ body {
 .sidebar-list-item a {
   display: flex;
   align-items: center;
-  text-decoration: none; 
-  color: inherit; 
-  padding: 10px 20px; 
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 20px;
 }
-
 
 .logo-image {
   width: 80%;
@@ -176,7 +174,7 @@ body {
   justify-content: space-between;
 }
 
-.main-title > p {
+.main-title>p {
   font-size: 20px;
 }
 
@@ -219,7 +217,7 @@ body {
   border-left: 7px solid green;
 }
 
-.card > span {
+.card>span {
   font-size: 20px;
   font-weight: 600;
 }
@@ -230,11 +228,11 @@ body {
   justify-content: space-between;
 }
 
-.card-inner > p {
+.card-inner>p {
   font-size: 18px;
 }
 
-.card-inner > span {
+.card-inner>span {
   font-size: 35px;
 }
 
@@ -265,6 +263,8 @@ body {
   justify-content: center;
   font-size: 22px;
   font-weight: 600;
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-container {
@@ -299,6 +299,7 @@ body {
   border: 1px solid #c1c1c4;
   font-size: 16px;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -313,7 +314,44 @@ body {
   margin-top: 20px;
 }
 
-.submit-button {
+.submit-button-container-group {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button {
+  background-color: var(--med-green);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.save-button:hover {
+  background-color: var(--light-green);
+}
+
+.cancel-button {
+  background-color: white;
+  color: var(--med-green);
+  border: 1px solid black;
+}
+
+.cancel-button:hover {
+  background-color: var(--light-green);
+  color: white;
+}
+
+.submit-button,
+.save-button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
@@ -324,81 +362,182 @@ body {
   transition: background-color 0.3s;
 }
 
-.submit-button:hover {
+.submit-button:hover,
+.save-button:hover {
   background-color: var(--light-green);
 }
 
-/* Media Queries */
-
-/* Medium <= 992px */
-@media screen and (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas:
-      "header"
-      "main";
-  }
-
-  #sidebar {
-    display: none;
-  }
-
-  .menu-icon {
-    display: inline;
-  }
-
-  .sidebar-title > span {
-    display: inline;
-  }
+.cancel-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: #666666;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px;
 }
 
-/* Small <= 768px */
-@media screen and (max-width: 768px) {
-  .main-cards {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 0;
-  }
-
-  .charts {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-
-  .input-container {
-    padding: 15px;
-  }
-
-  .input-field {
-    margin-bottom: 15px;
-  }
-
-  .form-label {
-    font-size: 16px;
-  }
-
-  .form-input {
-    padding: 8px;
-  }
-
-  .submit-button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
+.cancel-button:hover {
+  background-color: var(--light-green);
 }
 
-/* Extra Small <= 576px */
-@media screen and (max-width: 576px) {
-  .header-left {
-    display: none;
+.row .col {
+  padding: 20px;
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
+}
+
+.account-info {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
+  object-fit: cover;
+}
+
+.profile-picture hr {
+  width: 70%;
+
+  border: 0;
+
+  height: 3px;
+
+  background-color: black;
+
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.profile-picture a {
+  padding: 10px;
+  margin-top: 2px;
+  color: var(--dark-green);
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.profile-picture a:hover {
+  color: white;
+  background-color: var(--med-green);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+.banner-logo img {
+  width: 80%;
+
+  height: auto;
+
+  display: block;
+
+  margin: 0 auto;
+
+  border-radius: 0%;
+  border: 0;
+
+}
+
+.profile-picture,
+.banner-logo {
+  max-width: 400px;
+  width: 100%;
+
+  /* Media Queries */
+
+  /* Medium <= 992px */
+  @media screen and (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas:
+        "header"
+        "main";
+    }
+
+    #sidebar {
+      display: none;
+    }
+
+    .menu-icon {
+      display: inline;
+    }
+
+    .sidebar-title>span {
+      display: inline;
+    }
   }
 
-  .input-container {
-    padding: 15px;
+  /* Small <= 768px */
+  @media screen and (max-width: 768px) {
+    .main-cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+
+    .charts {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+
+    .input-container {
+      padding: 15px;
+    }
+
+    .input-field {
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      font-size: 16px;
+    }
+
+    .form-input {
+      padding: 8px;
+    }
+
+    .submit-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
   }
 
-  .input-field {
-    margin-bottom: 10px;
+  /* Extra Small <= 576px */
+  @media screen and (max-width: 576px) {
+    .header-left {
+      display: none;
+    }
+
+    .input-container {
+      padding: 15px;
+    }
+
+    .input-field {
+      margin-bottom: 10px;
+    }
   }
 }
