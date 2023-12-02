@@ -267,13 +267,11 @@ body {
   .modal-content {
     width: 90%;
     height: 70%;
-    /* Increase width for extra-small devices */
     padding: 10px;
   }
 
   .modal-title h1 {
     font-size: 18px;
-    /* Further adjust font size for extra-small screens */
   }
 }
 
@@ -282,12 +280,10 @@ body {
   .modal-content {
     width: 90%;
     height: 70%;
-    /* Increase width for extra-small devices */
     padding: 10px;
   }
 
   .modal-title h1 {
     font-size: 18px;
-    /* Further adjust font size for extra-small screens */
   }
 }
