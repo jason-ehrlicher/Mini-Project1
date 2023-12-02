@@ -8,11 +8,11 @@
 **Under Construction** - The website is currently in development. More features and functionalities will be added progressively. Stay tuned for updates!
 
 ## Planned Features
-- **Dashboard**: An interactive dashboard providing an overview of key golf metrics and recent activities.
-- **Reports**: Functionality to generate and view comprehensive reports related to golf.
-- **History**: A feature to access and analyze historical data in the world of golf.
+- **Dashboard**: An interactive dashboard providing an overview of key golf course metrics and recent activities.
+- **Reports**: Functionality to generate and view comprehensive reports related to golf course activity.
+- **History**: A feature to upload and analyze historical data of golf courses.
 - **Upload**: A secure platform for users to upload and manage golf-related data.
-- **Forecast**: Advanced tools for predicting outcomes and trends in golf.
+- **Forecast**: Advanced tools for predicting outcomes and trends in golf course activity.
 - **Account Management**: A user-friendly interface for managing personal profiles and settings.
 
 ## Technology Stack (Tentative)
