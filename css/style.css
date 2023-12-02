@@ -304,6 +304,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: flex;
+  width: 75%;
 }
 
 .submit-button-container {
