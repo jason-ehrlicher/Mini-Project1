@@ -48,7 +48,7 @@ body {
   padding: 20px;
 }
 
-.sidebar-title > span {
+.sidebar-title>span {
   display: none;
 }
 
@@ -235,25 +235,30 @@ body {
   .main-container {
     display: none;
   }
+
   .grid-container {
     grid-template-columns: 1fr;
   }
 
   .modal-content {
-    width: 70%; /* Increase width for medium devices */
+    width: 70%;
+    /* Increase width for medium devices */
   }
 
   #landing-sidebar {
     width: 100%;
   }
+
   .modal-content {
     width: 90%;
-    height: 70%; /* Increase width for extra-small devices */
+    height: 70%;
+    /* Increase width for extra-small devices */
     padding: 10px;
   }
 
   .modal-title h1 {
-    font-size: 18px; /* Further adjust font size for extra-small screens */
+    font-size: 18px;
+    /* Further adjust font size for extra-small screens */
   }
 }
 
@@ -261,12 +266,14 @@ body {
 @media screen and (max-width: 768px) {
   .modal-content {
     width: 90%;
-    height: 70%; /* Increase width for extra-small devices */
+    height: 70%;
+    /* Increase width for extra-small devices */
     padding: 10px;
   }
 
   .modal-title h1 {
-    font-size: 18px; /* Further adjust font size for extra-small screens */
+    font-size: 18px;
+    /* Further adjust font size for extra-small screens */
   }
 }
 
@@ -274,11 +281,13 @@ body {
 @media screen and (max-width: 576px) {
   .modal-content {
     width: 90%;
-    height: 70%; /* Increase width for extra-small devices */
+    height: 70%;
+    /* Increase width for extra-small devices */
     padding: 10px;
   }
 
   .modal-title h1 {
-    font-size: 18px; /* Further adjust font size for extra-small screens */
+    font-size: 18px;
+    /* Further adjust font size for extra-small screens */
   }
 }

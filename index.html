@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forecast Golf</title>
@@ -10,92 +11,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
+        rel="stylesheet" />
     <!-- Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="grid-container">
-      <!-- Sidebar -->
-      <aside id="landing-sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-          <a href="dashboard.html">  <img src="/assets/images/forecast golf logo1.png" class="logo-image" alt="forecast golf logo"> </a>
-          </div>
-        </div>
-        <form class="form-container">
-        <div class="input-container">
-          <div class="input-field">
-            <label for="emailInput" class="form-label">Email Address</label>
-            <input type="text" id="emailInput" name="email" autocomplete="email" class="form-input" />
-          </div>
-          <div class="input-field">
-            <label for="passwordInput" class="form-label">Password</label>
-            <input type="password" id="passwordInput" name="password" autocomplete="current-password" class="form-input" />
-          </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
 
-          <div class="submit-button-container">
-            <button type="submit" class="submit-button">Submit</button>
-            <a href="#" class="forgot-password-link">Forgot Your Password?</a>
-          </div>
-        </form>
-        </div>
-        
-        <div class="signup-prompt">
-          <p>
+<body>
+    <div class="grid-container">
+        <!-- Sidebar -->
+        <aside id="landing-sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <a href="dashboard.html"> <img src="/assets/images/forecast golf logo1.png" class="logo-image"
+                            alt="forecast golf logo"> </a>
+                </div>
+            </div>
+            <form class="form-container">
+                <div class="input-container">
+                    <div class="input-field">
+                        <label for="emailInput" class="form-label">Email Address</label>
+                        <input type="text" id="emailInput" name="email" autocomplete="email" class="form-input" />
+                    </div>
+                    <div class="input-field">
+                        <label for="passwordInput" class="form-label">Password</label>
+                        <input type="password" id="passwordInput" name="password" autocomplete="current-password"
+                            class="form-input" />
+                    </div>
+
+                    <div class="submit-button-container">
+                        <button type="submit" class="submit-button">Submit</button>
+                        <a href="#" class="forgot-password-link">Forgot Your Password?</a>
+                    </div>
+            </form>
+    </div>
+
+    <div class="signup-prompt">
+        <p>
             Don't Have an Account?
             <a href="signup.html" class="signup-link" id="signup-link">Sign Up</a>
-          </p>
-        </div>
-      </aside>
-      <!-- Main -->
-      <main class="main-container">
-        <img
-          src="/assets/images/hero image.jpg"
-          alt="Hero Image"
-          class="hero-image"
-        />
-      </main>
+        </p>
+    </div>
+    </aside>
+    <!-- Main -->
+    <main class="main-container">
+        <img src="/assets/images/hero image.jpg" alt="Hero Image" class="hero-image" />
+    </main>
     </div>
 
     <!-- Modal -->
     <div class="login-modal">
         <div class="modal-content">
             <div class="modal-close"><span class="material-icons-outlined">
-                cancel
+                    cancel
                 </span></div>
             <div class="modal-title">
                 <h1>Sign Up</h1>
-              </div>
-              <form class="form-container">
-            <div class="input-field">
-                <label for="nameInput" class="form-label">Name</label>
-                <input type="text" id="nameInput" name="fullName" autocomplete="name" class="form-input" />
-              </div>
-              <div class="input-field">
-                <label for="modalEmailInput" class="form-label">Email Address</label>
-                <input type="text" id="modalEmailInput" name="email" autocomplete="email" class="form-input" />
-              </div>
-              <div class="input-field">
-                <label for="modalPasswordInput" class="form-label">Password</label>
-                <input type="password" id="modalPasswordInput" name="newPassword" autocomplete="new-password" class="form-input" />
-              </div>              <div class="input-field">
-                <label for="modalConfirmPasswordInput" class="form-label">Confirm Password</label>
-                <input type="password" id="modalConfirmPasswordInput" name="confirmPAssword" autocomplete="new-password" class="form-input" />
-              </div>
+            </div>
+            <form class="form-container">
+                <div class="input-field">
+                    <label for="nameInput" class="form-label">Name</label>
+                    <input type="text" id="nameInput" name="fullName" autocomplete="name" class="form-input" />
+                </div>
+                <div class="input-field">
+                    <label for="modalEmailInput" class="form-label">Email Address</label>
+                    <input type="text" id="modalEmailInput" name="email" autocomplete="email" class="form-input" />
+                </div>
+                <div class="input-field">
+                    <label for="modalPasswordInput" class="form-label">Password</label>
+                    <input type="password" id="modalPasswordInput" name="newPassword" autocomplete="new-password"
+                        class="form-input" />
+                </div>
+                <div class="input-field">
+                    <label for="modalConfirmPasswordInput" class="form-label">Confirm Password</label>
+                    <input type="password" id="modalConfirmPasswordInput" name="confirmPAssword"
+                        autocomplete="new-password" class="form-input" />
+                </div>
 
-              <div class="submit-button-container">
-                <button type="submit" class="submit-button">Sign Up</button>
-              </div>
+                <div class="submit-button-container">
+                    <button type="submit" class="submit-button">Sign Up</button>
+                </div>
             </form>
         </div>
     </div>
     <!-- Scripts -->
     <script src="/js/landing.js"></script>
-  </body>
+</body>
+
 </html>
