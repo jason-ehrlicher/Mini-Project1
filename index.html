@@ -25,27 +25,31 @@
       <aside id="landing-sidebar">
         <div class="sidebar-title">
           <div class="sidebar-brand">
-            <img src="/assets/images/forecast golf logo1.png" class="logo-image" alt="forecast golf logo">
+          <a href="dashboard.html">  <img src="/assets/images/forecast golf logo1.png" class="logo-image" alt="forecast golf logo"> </a>
           </div>
         </div>
+        <form class="form-container">
         <div class="input-container">
           <div class="input-field">
-            <label for="textInput" class="form-label">Email Address</label>
-            <input type="text" id="textInput" class="form-input" />
+            <label for="emailInput" class="form-label">Email Address</label>
+            <input type="text" id="emailInput" name="email" autocomplete="email" class="form-input" />
           </div>
           <div class="input-field">
-            <label for="textInput" class="form-label">Password</label>
-            <input type="text" id="textInput" class="form-input" />
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" id="passwordInput" name="password" autocomplete="current-password" class="form-input" />
           </div>
+
           <div class="submit-button-container">
             <button type="submit" class="submit-button">Submit</button>
             <a href="#" class="forgot-password-link">Forgot Your Password?</a>
           </div>
+        </form>
         </div>
+        
         <div class="signup-prompt">
           <p>
             Don't Have an Account?
-            <a href="signup.html" class="signup-link">Sign Up</a>
+            <a href="signup.html" class="signup-link" id="signup-link">Sign Up</a>
           </p>
         </div>
       </aside>
@@ -58,8 +62,40 @@
         />
       </main>
     </div>
+
+    <!-- Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <div class="modal-close"><span class="material-icons-outlined">
+                cancel
+                </span></div>
+            <div class="modal-title">
+                <h1>Sign Up</h1>
+              </div>
+              <form class="form-container">
+            <div class="input-field">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" id="nameInput" name="fullName" autocomplete="name" class="form-input" />
+              </div>
+              <div class="input-field">
+                <label for="modalEmailInput" class="form-label">Email Address</label>
+                <input type="text" id="modalEmailInput" name="email" autocomplete="email" class="form-input" />
+              </div>
+              <div class="input-field">
+                <label for="modalPasswordInput" class="form-label">Password</label>
+                <input type="password" id="modalPasswordInput" name="newPassword" autocomplete="new-password" class="form-input" />
+              </div>              <div class="input-field">
+                <label for="modalConfirmPasswordInput" class="form-label">Confirm Password</label>
+                <input type="password" id="modalConfirmPasswordInput" name="confirmPAssword" autocomplete="new-password" class="form-input" />
+              </div>
+
+              <div class="submit-button-container">
+                <button type="submit" class="submit-button">Sign Up</button>
+              </div>
+            </form>
+        </div>
+    </div>
     <!-- Scripts -->
-    <!-- JS Link -->
     <script src="/js/landing.js"></script>
   </body>
 </html>
