@@ -4,6 +4,9 @@
 ## Introduction
 **Forecast Golf** is an upcoming, dynamic platform dedicated to golf course professionals and employees. Designed by Jason Ehrlicher, this website is currently under construction and aims to offer a variety of innovative features to enhance the golfing experience.
 
+## Figma
+[Lo-Fi Figma](https://www.figma.com/file/FGMenTFkTijGt2Roxo0Ycj/Untitled?type=design&node-id=0%3A1&mode=design&t=6JYsDUN32u71WAn0-1)
+
 ## Project Status
 **Under Construction** - The website is currently in development. More features and functionalities will be added progressively. Stay tuned for updates!
 
