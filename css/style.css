@@ -134,8 +134,6 @@ body {
   position: absolute;
 }
 
-
-
 /* Main */
 .main-container {
   grid-area: main;
@@ -367,5 +365,3 @@ body {
     margin-bottom: 10px;
   }
 }
-
-
