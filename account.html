@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>My Account</title>
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- Font -->
@@ -43,12 +43,13 @@
       <aside id="sidebar">
         <div class="sidebar-title">
           <div class="sidebar-brand">
-            <a href="dashboard.html">  <img
-              src="/assets/images/forecast golf logo1.png"
-              class="logo-image"
-              alt="forecast golf logo"
-            />
-          </a>
+            <a href="dashboard.html">
+              <img
+                src="/assets/images/forecast golf logo1.png"
+                class="logo-image"
+                alt="forecast golf logo"
+              />
+            </a>
           </div>
           <span class="material-icons-outlined" onclick="closeSidebar()">
             close
@@ -91,83 +92,15 @@
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
-          <p class="font-weight-bold">DAILY ROUNDS PLAYED DASHBOARD</p>
+          <p class="font-weight-bold">MY ACCOUNT</p>
         </div>
         <div class="input-container">
-          <p class="chart-title">Input Daily Rounds Played</p>
-          <div class="input-field">
-            <label for="textInput" class="form-label">Rounds Played</label>
-            <input type="text" id="textInput" class="form-input" />
-          </div>
-          <div class="input-field">
-            <label for="dateInput" class="form-label">Select Date</label>
-            <input type="date" id="dateInput" class="form-input" />
-          </div>
-          <div class="submit-button-container">
-            <button type="submit" class="submit-button">Submit</button>
-          </div>
-        </div>
-        <div class="main-cards">
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">Daily % Change</p>
-              <span class="material-icons-outlined text-green">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold">&#8593; 9%</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">Weekly % Change</p>
-              <span class="material-icons-outlined text-green">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold">&#8593; 3%</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">Monthly % Change</p>
-              <span class="material-icons-outlined text-red">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold">&#8595; 11%</span>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <p class="text-primary">YTD % Change</p>
-              <span class="material-icons-outlined text-green">
-                query_stats
-              </span>
-            </div>
-            <span class="text-primary font-weight-bold percent-change"
-              >&#8593; 17%</span
-            >
-          </div>
-        </div>
-        <div class="charts">
-          <div class="charts-card">
-            <p class="chart-title">Average Rounds Per Day</p>
-            <div id="bar-chart"></div>
-          </div>
-
-          <div class="charts-card">
-            <p class="chart-title">Rounds Per Month</p>
-            <div id="area-chart"></div>
-          </div>
+          <p class="chart-title">User's Account</p>
         </div>
       </main>
     </div>
     <!-- Scripts -->
-    <!-- Apex Charts -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- JS Link -->
     <script src="/js/script.js"></script>
-    <script src="/js/charts.js"></script>
   </body>
 </html>
