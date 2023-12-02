@@ -2,7 +2,7 @@
 # Mini-Project 1: Forecast Golf Website
 
 ## Introduction
-**Forecast Golf** is an upcoming, dynamic platform dedicated to golf professionals and employees. Designed by Jason Ehrlicher, this website is currently under construction and aims to offer a variety of innovative features to enhance the golfing experience.
+**Forecast Golf** is an upcoming, dynamic platform dedicated to golf course professionals and employees. Designed by Jason Ehrlicher, this website is currently under construction and aims to offer a variety of innovative features to enhance the golfing experience.
 
 ## Project Status
 **Under Construction** - The website is currently in development. More features and functionalities will be added progressively. Stay tuned for updates!
