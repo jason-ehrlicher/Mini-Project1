@@ -1,103 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reports</title>
     <!-- Favicon -->
-    <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" />
     <!-- CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/datePicker.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="grid-container">
-        <!-- Header -->
-        <header class="header">
-            <div class="menu-icon" onclick="openSidebar()">
-                <span class="material-icons-outlined"> menu </span>
-            </div>
-            <div class="header-left">
-                <span class="material-icons-outlined"> search </span>
-            </div>
-            <div class="header-right">
-                <span class="material-icons-outlined">notifications</span>
-                <a href="messages.html">
-                    <span class="material-icons-outlined"> email </span>
-                </a>
-                <a href="/account.html">
-                    <span class="material-icons-outlined"> account_circle </span>
-                </a>
-            </div>
-        </header>
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <div class="sidebar-title">
-                <div class="sidebar-brand">
-                    <a href="dashboard.html">
-                        <img src="/assets/images/forecast golf logo1.png" class="logo-image" alt="forecast golf logo" />
-                    </a>
-                </div>
-                <span class="material-icons-outlined" onclick="closeSidebar()">
-                    close
-                </span>
-            </div>
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined"> menu </span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined"> search </span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <a href="messages.html">
+            <span class="material-icons-outlined"> email </span>
+          </a>
+          <a href="/account.html">
+            <span class="material-icons-outlined"> account_circle </span>
+          </a>
+        </div>
+      </header>
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <a href="dashboard.html">
+              <img
+                src="/assets/images/forecast golf logo1.png"
+                class="logo-image"
+                alt="forecast golf logo"
+              />
+            </a>
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">
+            close
+          </span>
+        </div>
 
-            <ul class="sidebar-list">
-                <li class="sidebar-list-item">
-                    <a href="/dashboard.html">
-                        <span class="material-icons-outlined"> dashboard </span> Dashboard
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="/reports.html">
-                        <span class="material-icons-outlined"> poll </span>Reports
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="/history.html">
-                        <span class="material-icons-outlined"> history </span>History
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="/upload.html">
-                        <span class="material-icons-outlined"> file_upload </span>Upload
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="/forecast.html">
-                        <span class="material-icons-outlined"> psychology </span>ForeCast
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="/settings.html">
-                        <span class="material-icons-outlined"> settings </span>Settings
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <!-- Main -->
-        <main class="main-container">
-            <div class="main-title">
-                <p class="font-weight-bold">REPORTS</p>
-            </div>
-            <div class="input-container">
-                <p class="chart-title">Reports</p>
-            </div>
-        </main>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="/dashboard.html">
+              <span class="material-icons-outlined"> dashboard </span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/reports.html">
+              <span class="material-icons-outlined"> poll </span>Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/history.html">
+              <span class="material-icons-outlined"> history </span>History
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/upload.html">
+              <span class="material-icons-outlined"> file_upload </span>Upload
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/forecast.html">
+              <span class="material-icons-outlined"> psychology </span>ForeCast
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/settings.html">
+              <span class="material-icons-outlined"> settings </span>Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">REPORTS</p>
+        </div>
+        <div class="input-container">
+          <p class="chart-title">Select Date Range</p>
+          <!-- Date Picker -->
+          <input
+            type="text"
+            name="daterange"
+            id="demo"
+          />
+        </div>
+      </main>
     </div>
     <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <!-- Date Picker Script -->
+    <script>
+      $("#demo").daterangepicker(
+        {
+          ranges: {
+            Today: [moment(), moment()],
+            Yesterday: [
+              moment().subtract(1, "days"),
+              moment().subtract(1, "days"),
+            ],
+            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+            "This Month": [moment().startOf("month"), moment().endOf("month")],
+            "Last Month": [
+              moment().subtract(1, "month").startOf("month"),
+              moment().subtract(1, "month").endOf("month"),
+            ],
+            "Last Year": [
+              moment().subtract(1, "year").startOf("year"),
+              moment().subtract(1, "year").endOf("year"),
+            ],
+          },
+          alwaysShowCalendars: true,
+          startDate: moment().subtract(6, "days"),
+          endDate: moment(),
+        },
+        function (start, end, label) {
+          console.log(
+            "New date range selected: " +
+              start.format("YYYY-MM-DD") +
+              " to " +
+              end.format("YYYY-MM-DD") +
+              " (predefined range: " +
+              label +
+              ")"
+          );
+        }
+      );
+    </script>
     <!-- JS Link -->
     <script src="/js/script.js"></script>
-</body>
-
+  </body>
 </html>
