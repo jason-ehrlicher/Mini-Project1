@@ -1,0 +1,8 @@
+/* Increase the size of the input box */
+input[name="daterange"] {
+    height: 40px;       /* Adjust the height as needed */
+    font-size: 16px;    /* Adjust the font size as needed */
+    padding: 5px 10px;
+    width: 200px;
+  }
+  
