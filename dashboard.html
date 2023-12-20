@@ -107,45 +107,33 @@
         </form>
       </div>
       <div class="main-cards">
-        <div class="card">
-          <div class="card-inner">
-            <p class="text-primary">Daily % Change</p>
-            <span class="material-icons-outlined text-green">
-              query_stats
-            </span>
-          </div>
-          <span class="text-primary font-weight-bold">&#8593; 9%</span>
-        </div>
-
+        <!-- Weekly Change Card -->
         <div class="card">
           <div class="card-inner">
             <p class="text-primary">Weekly % Change</p>
-            <span class="material-icons-outlined text-green">
-              query_stats
-            </span>
+            <span class="material-icons-outlined text-icon">query_stats</span>
+            <span class="text-primary font-weight-bold weekly-change"></span>
           </div>
-          <span class="text-primary font-weight-bold">&#8593; 3%</span>
         </div>
 
+        <!-- Monthly Change Card -->
         <div class="card">
           <div class="card-inner">
             <p class="text-primary">Monthly % Change</p>
-            <span class="material-icons-outlined text-red">
-              query_stats
-            </span>
+            <span class="material-icons-outlined text-icon">query_stats</span>
+            <span class="text-primary font-weight-bold monthly-change"></span>
           </div>
-          <span class="text-primary font-weight-bold">&#8595; 11%</span>
         </div>
 
+        <!-- Yearly Change Card -->
         <div class="card">
           <div class="card-inner">
             <p class="text-primary">YTD % Change</p>
-            <span class="material-icons-outlined text-green">
-              query_stats
-            </span>
+            <span class="material-icons-outlined text-icon">query_stats</span>
+            <span class="text-primary font-weight-bold yearly-change"></span>
           </div>
-          <span class="text-primary font-weight-bold percent-change">&#8593; 17%</span>
         </div>
+
       </div>
       <div class="charts">
         <div class="charts-card">
@@ -163,7 +151,10 @@
   <!-- Scripts -->
   <!-- Apex Charts -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
   <!-- JS Link -->
+  <script src="/js/cards.js"></script>
   <script src="/js/charts.js"></script>
   <script src="/js/script.js"></script>
 </body>
